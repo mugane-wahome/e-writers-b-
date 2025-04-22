@@ -13,8 +13,8 @@ itsdangerous==2.0.1
 click==8.0.1
 
 # Database drivers
-psycopg2==2.9.1  # For PostgreSQL
-mysqlclient==2.0.3  # For MySQL
+psycopg2-binary==2.9.1  # Switched to binary to avoid pg_config issue
+mysqlclient==2.0.3  # Note: This may also fail on Netlify unless MySQL dev headers are present
 
 # Other common dependencies
 gunicorn==20.1.0
